@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="APEX GYM — Premium fitness experience with world-class trainers, cutting-edge equipment, and transformative programs. Join the elite.">
+    <title>APEX GYM — Forge Your Legacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span class="loader-text">APEX</span>
+        </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">APEX<span class="logo-accent">GYM</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#bmi" class="nav-link">BMI</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link nav-link-admin" id="NextWave"
+                        onclick="openModal('adminLoginModal'); return false;">Admin</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-nav" id="loginBtn" onclick="openModal('loginModal')">Login</button>
+                <button class="btn-nav btn-nav-primary" id="joinBtn" onclick="openModal('registerModal')">Join
+                    Now</button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <div id="hero-canvas-container" class="hero-canvas"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>THE #1 PREMIUM FITNESS DESTINATION</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-delay="0">FORGE</span>
+                <span class="title-line title-outline" data-delay="0.2">YOUR</span>
+                <span class="title-line title-gradient" data-delay="0.4">LEGACY</span>
+            </h1>
+            <p class="hero-subtitle">Transform your body. Elevate your mind. Conquer your limits with world-class
+                training and cutting-edge technology.</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="btn btn-primary">
+                    <span>START YOUR JOURNEY</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#programs" class="btn btn-outline">
+                    <span>EXPLORE PROGRAMS</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="15000">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Expert Trainers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Programs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- ========== PROGRAMS SECTION ========== -->
+    <section id="programs" class="section programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHAT WE OFFER</span>
+                <h2 class="section-title">Elite <span class="text-gradient">Programs</span></h2>
+                <p class="section-desc">Scientifically designed programs to help you achieve peak performance and
+                    transform your physique.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Strength Training</h3>
+                    <p>Build raw power with progressive overload techniques and compound movements designed for maximum
+                        muscle growth.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-fire"></i> 600 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Cardio Blast</h3>
+                    <p>Elevate your endurance with high-intensity cardio sessions that torch calories and strengthen
+                        your cardiovascular system.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-fire"></i> 800 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>HIIT Extreme</h3>
+                    <p>Maximum results in minimum time. Explosive intervals that push your limits and accelerate fat
+                        burn.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-fire"></i> 700 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Power Yoga</h3>
+                    <p>Find balance between strength and flexibility. Dynamic flows that build core stability and mental
+                        clarity.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-fire"></i> 400 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-fist-raised"></i></div>
+                    <h3>CrossFit WOD</h3>
+                    <p>Functional fitness at its finest. Constantly varied workouts that prepare you for anything life
+                        throws at you.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 50 min</span>
+                        <span><i class="fas fa-fire"></i> 750 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon"><i class="fas fa-hand-rock"></i></div>
+                    <h3>Boxing Fit</h3>
+                    <p>Unleash your inner fighter with high-energy boxing classes that build speed, coordination, and
+                        total-body power.</p>
+                    <div class="program-stats">
+                        <span><i class="fas fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-fire"></i> 900 cal</span>
+                    </div>
+                    <a href="#pricing" class="program-link">Join Program <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRAINERS SECTION ========== -->
+    <section id="trainers" class="section trainers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MEET THE TEAM</span>
+                <h2 class="section-title">World-Class <span class="text-gradient">Trainers</span></h2>
+                <p class="section-desc">Our elite team of certified professionals brings decades of combined experience
+                    to guide your transformation.</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card reveal">
+                    <div class="trainer-image">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Marcus Steel</h3>
+                        <span class="trainer-role">Head Strength Coach</span>
+                        <div class="trainer-stats-row">
+                            <div><strong>12+</strong><span>Years</span></div>
+                            <div><strong>500+</strong><span>Clients</span></div>
+                            <div><strong>CSCS</strong><span>Certified</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card reveal">
+                    <div class="trainer-image">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Phoenix</h3>
+                        <span class="trainer-role">HIIT & Cardio Specialist</span>
+                        <div class="trainer-stats-row">
+                            <div><strong>8+</strong><span>Years</span></div>
+                            <div><strong>300+</strong><span>Clients</span></div>
+                            <div><strong>ACE</strong><span>Certified</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card reveal">
+                    <div class="trainer-image">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Jake Thunder</h3>
+                        <span class="trainer-role">CrossFit & Boxing Coach</span>
+                        <div class="trainer-stats-row">
+                            <div><strong>10+</strong><span>Years</span></div>
+                            <div><strong>450+</strong><span>Clients</span></div>
+                            <div><strong>CF-L3</strong><span>Certified</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card reveal">
+                    <div class="trainer-image">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Luna Flex</h3>
+                        <span class="trainer-role">Yoga & Mobility Expert</span>
+                        <div class="trainer-stats-row">
+                            <div><strong>15+</strong><span>Years</span></div>
+                            <div><strong>600+</strong><span>Clients</span></div>
+                            <div><strong>RYT-500</strong><span>Certified</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GYM GALLERY SECTION ========== -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR FACILITY</span>
+                <h2 class="section-title">Gym <span class="text-gradient">Gallery</span></h2>
+                <p class="section-desc">Step inside APEX — a premium, state-of-the-art fitness facility designed to fuel
+                    your transformation.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large reveal">
+                    <img src="images/gallery1.png" alt="APEX Gym Weight Training Zone" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Weight Training Zone</h3>
+                            <p>State-of-the-art equipment for maximum gains</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery2.png" alt="APEX Gym Cardio Zone" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cardio Arena</h3>
+                            <p>Premium machines with immersive screens</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery3.png" alt="APEX Gym Boxing Ring" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Boxing & MMA Ring</h3>
+                            <p>Professional-grade combat training facility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder-card">
+                        <i class="fas fa-spa"></i>
+                        <h3>Yoga Studio</h3>
+                        <p>Serene space for mind-body harmony</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder-card">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>Recovery & Spa</h3>
+                        <p>Cryo, sauna & ice bath recovery</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large reveal">
+                    <div class="gallery-placeholder-card gallery-placeholder-wide">
+                        <i class="fas fa-fire-alt"></i>
+                        <h3>CrossFit Arena</h3>
+                        <p>Open-floor functional training zone with full rig setup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHAT MEMBERS SAY</span>
+                <h2 class="section-title">Member <span class="text-gradient">Testimonials</span></h2>
+            </div>
+            <div class="testimonials-carousel" id="testimonialCarousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"APEX completely transformed not just my body but my entire
+                            lifestyle. The trainers are world-class and the atmosphere is electric. Best decision I ever
+                            made."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>James Wilson</strong>
+                                <span>Member for 2 years</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The HIIT classes are absolutely insane! I've never been in better
+                            shape. The community here is like a family – everyone pushes each other to be better."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Priya Sharma</strong>
+                                <span>Member for 1 year</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"As a competitive athlete, I needed a gym that could match my
+                            intensity. APEX exceeded every expectation. The equipment, the trainers, the programming –
+                            all elite."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Carlos Rivera</strong>
+                                <span>Member for 3 years</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was intimidated to join a gym at first, but APEX made me feel
+                            welcome from day one. Now I can deadlift double my bodyweight. Never thought that was
+                            possible!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Aisha Nakamura</strong>
+                                <span>Member for 1.5 years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevTestimonial" aria-label="Previous"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextTestimonial" aria-label="Next"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING SECTION ========== -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MEMBERSHIP PLANS</span>
+                <h2 class="section-title">Choose Your <span class="text-gradient">Plan</span></h2>
+                <p class="section-desc">Flexible plans designed to fit your goals and budget. All plans include access
+                    to our state-of-the-art facility.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <div class="pricing-tier">BASIC</div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">29</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Gym Floor Access</li>
+                        <li><i class="fas fa-check"></i> 2 Group Classes/Week</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
+                        <li><i class="fas fa-check"></i> Fitness Assessment</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Personal Training</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Nutrition Plan</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Recovery Zone</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block" onclick="selectPlan('basic')">Choose Basic</button>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <div class="pricing-badge">MOST POPULAR</div>
+                    <div class="pricing-tier">PRO</div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">59</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Gym Access 24/7</li>
+                        <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                        <li><i class="fas fa-check"></i> Premium Locker Room</li>
+                        <li><i class="fas fa-check"></i> Monthly Body Analysis</li>
+                        <li><i class="fas fa-check"></i> 2 PT Sessions/Month</li>
+                        <li><i class="fas fa-check"></i> Basic Nutrition Guide</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Recovery Zone</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block" onclick="selectPlan('pro')">Choose Pro</button>
+                </div>
+                <div class="pricing-card reveal">
+                    <div class="pricing-tier">ELITE</div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Unlimited PT Sessions</li>
+                        <li><i class="fas fa-check"></i> Custom Nutrition Plan</li>
+                        <li><i class="fas fa-check"></i> Recovery Zone Access</li>
+                        <li><i class="fas fa-check"></i> Cryo & Sauna</li>
+                        <li><i class="fas fa-check"></i> Priority Booking</li>
+                        <li><i class="fas fa-check"></i> VIP Events & Workshops</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block" onclick="selectPlan('elite')">Choose Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS SECTION ========== -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">YOUR VOICE MATTERS</span>
+                <h2 class="section-title">Member <span class="text-gradient">Reviews</span></h2>
+                <p class="section-desc">Share your APEX experience and inspire others on their fitness journey.</p>
+            </div>
+            <div class="reviews-wrapper">
+                <div class="review-form-container">
+                    <h3 class="review-form-title"><i class="fas fa-pen-fancy"></i> Write a Review</h3>
+                    <form id="reviewForm" class="review-form">
+                        <div class="form-group">
+                            <input type="text" id="reviewName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="star-rating-input" id="starRatingInput">
+                                <span class="star-label">Your Rating:</span>
+                                <div class="stars-input">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="reviewText" rows="4" placeholder="Tell us about your experience at APEX..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Submit Review</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="reviews-list" id="reviewsList">
+                    <!-- Populated by JS from localStorage -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BMI CALCULATOR SECTION ========== -->
+    <section id="bmi" class="section bmi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">HEALTH CHECK</span>
+                <h2 class="section-title">BMI <span class="text-gradient">Calculator</span></h2>
+                <p class="section-desc">Know your Body Mass Index instantly. Track your health journey with our smart
+                    calculator.</p>
+            </div>
+            <div class="bmi-wrapper">
+                <div class="bmi-form-container">
+                    <form id="bmiForm" class="bmi-form">
+                        <div class="bmi-input-group">
+                            <label for="bmiHeight">Height (cm)</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-ruler-vertical"></i>
+                                <input type="number" id="bmiHeight" placeholder="e.g. 175" min="50" max="300" required>
+                            </div>
+                        </div>
+                        <div class="bmi-input-group">
+                            <label for="bmiWeight">Weight (kg)</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-weight-hanging"></i>
+                                <input type="number" id="bmiWeight" placeholder="e.g. 70" min="10" max="500" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculate BMI</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="bmi-result-container" id="bmiResult">
+                    <div class="bmi-gauge-wrapper">
+                        <svg class="bmi-gauge" viewBox="0 0 200 120">
+                            <defs>
+                                <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#00b4d8" />
+                                    <stop offset="35%" style="stop-color:#39ff14" />
+                                    <stop offset="65%" style="stop-color:#ffd60a" />
+                                    <stop offset="100%" style="stop-color:#ff006e" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.1)"
+                                stroke-width="12" stroke-linecap="round" />
+                            <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#gaugeGradient)"
+                                stroke-width="12" stroke-linecap="round" stroke-dasharray="251.2"
+                                stroke-dashoffset="251.2" id="gaugeArc" />
+                            <circle cx="100" cy="100" r="4" fill="#39ff14" id="gaugeNeedle" class="gauge-needle" />
+                        </svg>
+                        <div class="bmi-value" id="bmiValue">--</div>
+                    </div>
+                    <div class="bmi-category" id="bmiCategory">Enter your details</div>
+                    <div class="bmi-scale">
+                        <div class="scale-item underweight">&lt; 18.5<span>Underweight</span></div>
+                        <div class="scale-item normal">18.5 - 24.9<span>Normal</span></div>
+                        <div class="scale-item overweight">25 - 29.9<span>Overweight</span></div>
+                        <div class="scale-item obese">30+<span>Obese</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2 class="section-title">Contact <span class="text-gradient">Us</span></h2>
+                <p class="section-desc">Have questions? We'd love to hear from you. Send us a message and we'll respond
+                    as soon as possible.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Fitness Avenue, Downtown<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@apexgym.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon-Fri: 5:00 AM - 11:00 PM<br>Sat-Sun: 7:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactSubject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">APEX<span class="logo-accent">GYM</span></span>
+                    </a>
+                    <p>Forge your legacy with the most premium fitness experience. Transform your body, elevate your
+                        mind.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">Cardio Blast</a></li>
+                        <li><a href="#">HIIT Extreme</a></li>
+                        <li><a href="#">Power Yoga</a></li>
+                        <li><a href="#">Boxing Fit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Get the latest tips, exclusive offers, and fitness inspiration.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 APEX GYM. All rights reserved. Forged with <i class="fas fa-heart"
+                        style="color:#ff006e"></i> and iron.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== AUTH MODALS ========== -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+            <h2 class="modal-title">Welcome <span class="text-gradient">Back</span></h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="Nilesh2005" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#"
+                        onclick="switchModal('loginModal','registerModal')">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('registerModal')">&times;</button>
+            <h2 class="modal-title">Join <span class="text-gradient">APEX</span></h2>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <input type="text" id="registerName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="Password" minlength="6" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#"
+                        onclick="switchModal('registerModal','loginModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== ADMIN LOGIN MODAL ========== -->
+    <div class="modal-overlay" id="adminLoginModal">
+        <div class="modal admin-modal">
+            <button class="modal-close" onclick="closeModal('adminLoginModal')">&times;</button>
+            <div class="admin-modal-icon"><i class="fas fa-shield-alt"></i></div>
+            <h2 class="modal-title">Admin <span class="text-gradient-admin">Access</span></h2>
+            <p class="admin-modal-desc">Enter your admin credentials to access the dashboard.</p>
+            <form id="adminLoginForm" class="auth-form">
+                <div class="form-group">
+                    <input type="text" id="adminLoginId" placeholder="Nilesh" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="adminLoginPassword" placeholder="Admin Password" required>
+                </div>
+                <button type="submit" class="btn btn-admin btn-block">
+                    <i class="fas fa-lock-open"></i>
+                    <span>Access Dashboard</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== ADMIN PANEL ========== -->
+    <div class="admin-panel-overlay" id="adminPanel">
+        <div class="admin-panel">
+            <div class="admin-panel-header">
+                <div class="admin-panel-title">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>APEX <span class="text-gradient-admin">Admin</span> Dashboard</h2>
+                </div>
+                <button class="admin-panel-close" onclick="closeAdminPanel()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="analytics" onclick="switchAdminTab('analytics')">
+                    <i class="fas fa-chart-line"></i> Analytics
+                </button>
+                <button class="admin-tab" data-tab="bookings" onclick="switchAdminTab('bookings')">
+                    <i class="fas fa-calendar-check"></i> Bookings
+                </button>
+                <button class="admin-tab" data-tab="members" onclick="switchAdminTab('members')">
+                    <i class="fas fa-users"></i> Members
+                </button>
+                <button class="admin-tab" data-tab="reviews-admin" onclick="switchAdminTab('reviews-admin')">
+                    <i class="fas fa-star"></i> Reviews
+                </button>
+                <button class="admin-tab" data-tab="messages" onclick="switchAdminTab('messages')">
+                    <i class="fas fa-envelope"></i> Messages
+                </button>
+            </div>
+
+            <!-- Analytics Tab -->
+            <div class="admin-tab-content active" id="tab-analytics">
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon" style="background: rgba(57,255,20,0.1); color: var(--neon-green);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <div class="admin-stat-value" id="stat-members">0</div>
+                            <div class="admin-stat-label">Total Members</div>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon" style="background: rgba(0,240,255,0.1); color: var(--neon-blue);">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <div class="admin-stat-value" id="stat-bookings">0</div>
+                            <div class="admin-stat-label">Total Bookings</div>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon"
+                            style="background: rgba(255,214,10,0.1); color: var(--neon-yellow);"><i
+                                class="fas fa-star"></i></div>
+                        <div>
+                            <div class="admin-stat-value" id="stat-reviews">0</div>
+                            <div class="admin-stat-label">Total Reviews</div>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon" style="background: rgba(255,0,110,0.1); color: var(--neon-pink);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="admin-stat-value" id="stat-messages">0</div>
+                            <div class="admin-stat-label">Messages</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Charts -->
+                <div class="admin-charts-grid">
+                    <div class="admin-chart-card">
+                        <h3>Bookings by Class</h3>
+                        <div class="chart-bars" id="bookingsChart"></div>
+                    </div>
+                    <div class="admin-chart-card">
+                        <h3>Membership Distribution</h3>
+                        <div class="chart-bars" id="membershipChart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bookings Tab -->
+            <div class="admin-tab-content" id="tab-bookings">
+                <div class="admin-table-header">
+                    <h3>All Bookings</h3>
+                    <button class="btn-admin-sm" onclick="clearAllBookings()"><i class="fas fa-trash"></i> Clear
+                        All</button>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="bookingsTable">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Class</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingsTableBody"></tbody>
+                    </table>
+                    <div class="admin-empty" id="bookingsEmpty"><i class="fas fa-calendar-times"></i>
+                        <p>No bookings yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members Tab -->
+            <div class="admin-tab-content" id="tab-members">
+                <div class="admin-table-header">
+                    <h3>Registered Members</h3>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="membersTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Plan</th>
+                                <th>Joined</th>
+                            </tr>
+                        </thead>
+                        <tbody id="membersTableBody"></tbody>
+                    </table>
+                    <div class="admin-empty" id="membersEmpty"><i class="fas fa-user-slash"></i>
+                        <p>No members yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Admin Tab -->
+            <div class="admin-tab-content" id="tab-reviews-admin">
+                <div class="admin-table-header">
+                    <h3>Member Reviews</h3>
+                    <button class="btn-admin-sm" onclick="clearAllReviews()"><i class="fas fa-trash"></i> Clear
+                        All</button>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="reviewsAdminTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Rating</th>
+                                <th>Review</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reviewsAdminTableBody"></tbody>
+                    </table>
+                    <div class="admin-empty" id="reviewsAdminEmpty"><i class="fas fa-comment-slash"></i>
+                        <p>No reviews yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Tab -->
+            <div class="admin-tab-content" id="tab-messages">
+                <div class="admin-table-header">
+                    <h3>Contact Messages</h3>
+                    <button class="btn-admin-sm" onclick="clearAllMessages()"><i class="fas fa-trash"></i> Clear
+                        All</button>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="messagesTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messagesTableBody"></tbody>
+                    </table>
+                    <div class="admin-empty" id="messagesEmpty"><i class="fas fa-inbox"></i>
+                        <p>No messages yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== TOAST NOTIFICATION ========== -->
+    <div id="toast" class="toast"></div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
